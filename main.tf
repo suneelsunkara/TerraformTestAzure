@@ -84,7 +84,7 @@ resource "azurerm_virtual_machine" "terraformiacvm" {
     managed_disk_type = "Standard_LRS"
   }
   os_profile {
-    computer_name      = "terraform-iac-vm01"
+    computer_name      = "terraformiacvm"
     admin_username     = "demoadmin"
     admin_password     = "Password123$"
   }

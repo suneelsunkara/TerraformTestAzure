@@ -3,7 +3,7 @@ terraform {
     resource_group_name   = "terraform-iac-test"
     storage_account_name  = "terraformiacstatesa"
     container_name        = "tstate"
-    key                   = "ThcvT/yKp6BU9oHQ0S/ZbFBYs9EOcl6p8agyS67P55Lknf5rw0u6OsuAPn6mcdzOVk8sq7yme2jeduGQ9T2QWQ=="
+    key                   = "secretkey"
 }
 
   required_providers {
@@ -24,7 +24,7 @@ provider "azurerm" {
 data "azurerm_client_config" "current" {}
 # Create our Resource Group - Jonnychipz-RG
 resource "azurerm_resource_group" "rg" {
-  name     = "terraform-iac-app01"
+  name     = "terraform-iac-test"
   location = "southeastasia"
 }
 # Create our Virtual Network - Jonnychipz-VNET

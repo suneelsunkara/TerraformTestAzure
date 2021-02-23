@@ -65,8 +65,8 @@ resource "azurerm_network_interface" "vmnic" {
   }
 }
 # Create our Virtual Machine - Jonnychipz-VM01
-resource "azurerm_virtual_machine" "terraform-iac-vm01" {
-  name                  = "terraform-iac-vm01"
+resource "azurerm_virtual_machine" "terraformiacvm01" {
+  name                  = "terraform-iac-vm"
   location              = azurerm_resource_group.rg.location
   resource_group_name   = azurerm_resource_group.rg.name
   network_interface_ids = [azurerm_network_interface.vmnic.id]
